@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get 'donations/index'
   root "donations#index"
-  resources :donation, only: [:index, :new]
+  resources :donations, only: [:index, :new]
 end
